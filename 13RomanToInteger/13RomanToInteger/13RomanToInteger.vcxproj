@@ -79,6 +79,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="13RomanToInteger.cpp" />
+    <ClCompile Include="191NumberOf1Bit.cpp" />
     <ClCompile Include="217ContainDuplicate.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

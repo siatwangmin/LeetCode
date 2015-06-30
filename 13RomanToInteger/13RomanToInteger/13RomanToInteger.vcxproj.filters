@@ -21,5 +21,8 @@
     <ClCompile Include="217ContainDuplicate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="191NumberOf1Bit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

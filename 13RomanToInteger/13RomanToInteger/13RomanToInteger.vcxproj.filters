@@ -24,5 +24,11 @@
     <ClCompile Include="191NumberOf1Bit.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="104MaximumDepthofBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="111MinimumDepthOfBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

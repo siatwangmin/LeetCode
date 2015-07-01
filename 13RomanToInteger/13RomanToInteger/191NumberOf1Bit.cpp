@@ -19,14 +19,14 @@ public:
 	}
 };
 
-int main()
-{
-	Solution mySolution = Solution();
-	int myInteger;
-	while (cin >> myInteger)
-	{
-		cout << "The input number is : " << myInteger << endl;
-		cout << "The Hamming Weight is : " << mySolution.hammingWeight(myInteger) << endl;
-	}
-	return 0;
-}
+//int main()
+//{
+//	Solution mySolution = Solution();
+//	int myInteger;
+//	while (cin >> myInteger)
+//	{
+//		cout << "The input number is : " << myInteger << endl;
+//		cout << "The Hamming Weight is : " << mySolution.hammingWeight(myInteger) << endl;
+//	}
+//	return 0;
+//}

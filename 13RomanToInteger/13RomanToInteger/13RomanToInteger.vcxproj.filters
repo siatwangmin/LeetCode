@@ -30,5 +30,8 @@
     <ClCompile Include="111MinimumDepthOfBinaryTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="110BalancedBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

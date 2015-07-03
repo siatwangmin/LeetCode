@@ -79,6 +79,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="104MaximumDepthofBinaryTree.cpp" />
+    <ClCompile Include="110BalancedBinaryTree.cpp" />
     <ClCompile Include="111MinimumDepthOfBinaryTree.cpp" />
     <ClCompile Include="13RomanToInteger.cpp" />
     <ClCompile Include="191NumberOf1Bit.cpp" />

@@ -7,7 +7,7 @@ public:
 		int result = 0;
 		int size = s.size();
 		int preTemp = 0;
-		for (size_t i = 0; i < size; i++)
+		for (int i = 0; i < size; i++)
 		{
 			int temp = 0;
 			switch (s[i])

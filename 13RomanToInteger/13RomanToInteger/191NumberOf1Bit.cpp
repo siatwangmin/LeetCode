@@ -9,7 +9,7 @@ public:
 		int result = 0;
 		while (n)
 		{
-			if (n & 0x01 == 1)
+			if ((n & 0x01) == 1)
 			{
 				result++;
 			}

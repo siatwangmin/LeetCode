@@ -86,6 +86,7 @@
     <ClCompile Include="191NumberOf1Bit.cpp" />
     <ClCompile Include="217ContainDuplicate.cpp" />
     <ClCompile Include="226InvertBinaryTree.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree.h" />

@@ -82,6 +82,7 @@
     <ClCompile Include="110BalancedBinaryTree.cpp" />
     <ClCompile Include="111MinimumDepthOfBinaryTree.cpp" />
     <ClCompile Include="13RomanToInteger.cpp" />
+    <ClCompile Include="144BinaryTreePreoderTraveral.cpp" />
     <ClCompile Include="145BinaryTreePostorderTraversal.cpp" />
     <ClCompile Include="191NumberOf1Bit.cpp" />
     <ClCompile Include="217ContainDuplicate.cpp" />

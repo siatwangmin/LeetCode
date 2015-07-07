@@ -1,7 +1,7 @@
 #include<iostream>
 #include "tree.h"
 #include <vector>
-#include "145BinaryTreePostorderTraversal.cpp"
+#include "144BinaryTreePreoderTraveral.cpp"
 
 using namespace std;
 
@@ -16,7 +16,7 @@ int main()
 	right.left = &left;
 	root.right = &right;
 	Solution mySolution = Solution();
-	vector<int> test = mySolution.postorderTraversal(&root);
+	vector<int> test = mySolution.preorderTraversal(&root);
 	for (size_t i = 0; i < test.size(); i++)
 	{
 		cout << test[i] << endl;

@@ -20,12 +20,12 @@ public:
 	}
 };
 
-int main()
-{
-	Solution mySolution = Solution();
-	TreeNode myTreeNode = TreeNode(1);
-	mySolution.invertTree(&myTreeNode);
-	getchar();
-	getchar();
-	return 0;
-}
+//int main()
+//{
+//	Solution mySolution = Solution();
+//	TreeNode myTreeNode = TreeNode(1);
+//	mySolution.invertTree(&myTreeNode);
+//	getchar();
+//	getchar();
+//	return 0;
+//}

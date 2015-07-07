@@ -10,40 +10,52 @@ public:
 	vector<vector<int>> levelOrder(TreeNode* root) {
 		vector<vector<int>> result;
 		queue<TreeNode*> que;
-		queue<int> flag;
-		int count = 1;
+		vector<int> row;
+		bool serialNUll = false;
 
 		if (root == NULL)
 			return result;
 
 		que.push(root);
-		flag.push(count);
 
-		count++;
 
 		while (!que.empty())
 		{
 			TreeNode* temp2 = que.front();
 			que.pop();
-
-
-			if (temp2->left != NULL)
-			{
-				flag.push(count);
-				que.push(temp2->left);
-			}
-			if (temp2->right != NULL)
-			{
-				flag.push(count);
-				que.push(temp2->right);
-			}
 			
-			count++;
 
+			if (temp2 != NULL)
+			{
+				if (temp2->left != NULL)
+				{
+					que.push(temp2->left);
+				}
+				else
+				{
+					que.push(NULL);
+				}
+				if (temp2->right != NULL)
+				{
+					que.push(temp2->right);
+				}
+				else
+				{
+					que.push(NULL);
+				}
+				row.push_back(temp2->val);
+				serialNUll = false;
+			}
+			else
+			{
+				if (!serialNUll)
+				{
+					result.push_back(row);
+					row.clear();
+				}
+				serialNUll = true;
+			}
 		}
-
 		return result;
-
-			
 	}
 };

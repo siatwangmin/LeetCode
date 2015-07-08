@@ -81,6 +81,7 @@
     <ClCompile Include="103BinaryTreeZigzagLevelOrderTraversal.cpp" />
     <ClCompile Include="104BinaryTreeLevelOrderTraversal.cpp" />
     <ClCompile Include="104MaximumDepthofBinaryTree.cpp" />
+    <ClCompile Include="105ConstructBinaryTreefromPreorderandInorderTraversal.cpp" />
     <ClCompile Include="107BinaryTreeLevelOrderTraversal2.cpp" />
     <ClCompile Include="110BalancedBinaryTree.cpp" />
     <ClCompile Include="111MinimumDepthOfBinaryTree.cpp" />

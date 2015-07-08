@@ -2,6 +2,7 @@
 #include "tree.h"
 #include <vector>
 #include <queue>
+#include <stack>
 
 #include "104BinaryTreeLevelOrderTraversal.cpp"
 
@@ -19,10 +20,35 @@ int main()
 	right.left = &left;
 	root.right = &right;
 	Solution mySolution = Solution();
-	vector<vector<int>> test = mySolution.levelOrder(&root);
+	//vector<vector<int>> test = mySolution.levelOrder(&root);
 	
-	cout << test.size() << endl;
+	//cout << test.size() << endl;
 
+	vector<int> testVector;
+	stack<int> testStack;
+
+	for (size_t i = 0; i < 10; i++)
+	{
+		testVector.push_back(i);
+	}
+
+	for (size_t i = 0; i < testVector.size(); i++)
+	{
+		cout << testVector[i] << '\t';
+	}
+	cout << endl;
+
+	testVector.clear();
+
+	for (size_t i = 0; i < 10; i++)
+	{
+		testVector.insert(testVector.begin(), i);
+	}
+
+	for (size_t i = 0; i < testVector.size(); i++)
+	{
+		cout << testVector[i] << '\t';
+	}
 	getchar();
 	getchar();
 	return 0;

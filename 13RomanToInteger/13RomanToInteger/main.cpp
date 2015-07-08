@@ -4,38 +4,63 @@
 #include <queue>
 #include <stack>
 
-#include "104BinaryTreeLevelOrderTraversal.cpp"
+#include "105ConstructBinaryTreefromPreorderandInorderTraversal.cpp"
 
 using namespace std;
 
+vector<int> preorderTraversal(TreeNode* root) {
+	vector<int> result;
+	if (root == NULL)
+		return result;
 
+	result.push_back(root->val);
+
+	vector<int> l = preorderTraversal(root->left);
+
+	for (size_t i = 0; i < l.size(); i++)
+	{
+		result.push_back(l[i]);
+	}
+
+	vector<int> r = preorderTraversal(root->right);
+
+	for (size_t i = 0; i < r.size(); i++)
+	{
+		result.push_back(r[i]);
+	}
+
+	return result;
+
+
+}
 
 
 int main()
 {
-	
-	TreeNode root = TreeNode(1);
-	TreeNode right = TreeNode(2);
-	TreeNode left = TreeNode(3);
-	right.left = &left;
-	root.right = &right;
+	vector<int> preorder;
+	vector<int> inorder;
+	preorder.push_back(7);
+	preorder.push_back(10);
+	preorder.push_back(4);
+	preorder.push_back(3);
+	preorder.push_back(1);
+	preorder.push_back(2);
+	preorder.push_back(8);
+	preorder.push_back(11);
+
+	inorder.push_back(4);
+	inorder.push_back(10);
+	inorder.push_back(3);
+	inorder.push_back(1);
+	inorder.push_back(7);
+	inorder.push_back(11);
+	inorder.push_back(8);
+	inorder.push_back(2);
+
 	Solution mySolution = Solution();
-	//vector<vector<int>> test = mySolution.levelOrder(&root);
-	
-	//cout << test.size() << endl;
+	TreeNode* test = mySolution.buildTree(preorder, inorder);
 
-	vector<int> testVector;
-	stack<int> testStack;
-
-	for (size_t i = 0; i < 10; i++)
-	{
-		testVector.insert(testVector.begin(), i);
-	}
-
-	for (size_t i = 0; i < testVector.size(); i++)
-	{
-		cout << testVector[i] << '\t';
-	}
+	vector<int> re = preorderTraversal(test);
 
 	getchar();
 	getchar();

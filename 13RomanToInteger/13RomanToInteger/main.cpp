@@ -29,19 +29,6 @@ int main()
 
 	for (size_t i = 0; i < 10; i++)
 	{
-		testVector.push_back(i);
-	}
-
-	for (size_t i = 0; i < testVector.size(); i++)
-	{
-		cout << testVector[i] << '\t';
-	}
-	cout << endl;
-
-	testVector.clear();
-
-	for (size_t i = 0; i < 10; i++)
-	{
 		testVector.insert(testVector.begin(), i);
 	}
 
@@ -49,6 +36,7 @@ int main()
 	{
 		cout << testVector[i] << '\t';
 	}
+
 	getchar();
 	getchar();
 	return 0;

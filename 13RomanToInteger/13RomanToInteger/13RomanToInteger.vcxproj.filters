@@ -60,13 +60,13 @@
     <ClCompile Include="105ConstructBinaryTreefromPreorderandInorderTraversal.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="106ConstructBinaryTreefromInorderandPostorderTraversal.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="101SymmetricTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="100SameTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="106ConstructBinaryTreefromInorderandPostorderTraversal.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

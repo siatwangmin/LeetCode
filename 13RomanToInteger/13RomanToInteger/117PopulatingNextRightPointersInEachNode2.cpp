@@ -73,3 +73,25 @@ using namespace std;
 //		connectRightNode();
 //	}
 //};
+
+
+//方法二：用另外一种方法递归求出来了
+class Solution {
+public:
+	void connect(TreeLinkNode *root) {
+		if (root == NULL)
+		{
+			return;
+		}
+		if (root->left != NULL && root->right != NULL)
+		{
+			root->left->next = root->right;
+			if (root->next != NULL)
+			{
+				root->right->next = root->next->left;
+			}
+			connect(root->left);
+			connect(root->right);
+		}
+	}
+};

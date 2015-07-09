@@ -104,16 +104,17 @@ public:
 
 int main()
 {
-	TreeNode* root1 = new TreeNode(1);
-	TreeNode* left1 = new TreeNode(2);
+	TreeNode* root = new TreeNode(5);
+	TreeNode* root4 = new TreeNode(4);
+	TreeNode* root8 = new TreeNode(8);
+	TreeNode* root11 = new TreeNode(11);
+
+	TreeNode* root13 = new TreeNode(13);
+	TreeNode* root4_2 = new TreeNode(4);
+	TreeNode* root7 = new TreeNode(7);
+	TreeNode* root4 = new TreeNode(4);
+	TreeNode* root4 = new TreeNode(4);
 	
-	root1->left = left1;
-
-
-	Solution sameTreeTest = Solution();
-	bool isSame = sameTreeTest.isSymmetric(root1);
-
-
 
 	getchar();
 	getchar();

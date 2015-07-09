@@ -12,4 +12,12 @@ struct TreeNode {
 	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
+struct TreeLinkNode {
+	TreeLinkNode *left;
+	TreeLinkNode *right;
+	TreeLinkNode *next;
+	int val;
+	TreeLinkNode(int x) : val(x), left(NULL), right(NULL), next(NULL){}
+};
+
 #endif

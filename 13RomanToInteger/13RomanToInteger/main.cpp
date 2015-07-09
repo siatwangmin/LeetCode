@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "199BinaryTreeRightSideView.cpp"
+#include "116PopulatingNextRightPointersinEachNode.cpp"
 
 using namespace std;
 
@@ -104,19 +104,25 @@ public:
 
 int main()
 {
-	TreeNode* root = new TreeNode(1);
-	TreeNode* root2 = new TreeNode(2);
-	TreeNode* root3 = new TreeNode(3);
-	TreeNode* root4 = new TreeNode(4);
-	TreeNode* root5 = new TreeNode(5);
+	TreeLinkNode* root = new TreeLinkNode(1);
+	TreeLinkNode* root2 = new TreeLinkNode(2);
+	TreeLinkNode* root3 = new TreeLinkNode(3);
+	TreeLinkNode* root4 = new TreeLinkNode(4);
+	TreeLinkNode* root5 = new TreeLinkNode(5);
+	TreeLinkNode* root6 = new TreeLinkNode(6);
+	TreeLinkNode* root7 = new TreeLinkNode(7);
 
+	root3->left = root6;
+	root3->right = root7;
+
+	root2->left = root4;
 	root2->right = root5;
-	root3->right = root4;
+
 	root->left = root2;
 	root->right = root3;
 	
 	Solution mySolution = Solution();
-	vector<int> re = mySolution.rightSideView(root);
+	mySolution.connect(root);
 
 	getchar();
 	getchar();

@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "105ConstructBinaryTreefromPreorderandInorderTraversal.cpp"
+#include "106ConstructBinaryTreefromInorderandPostorderTraversal.cpp"
 
 using namespace std;
 
@@ -34,11 +34,35 @@ vector<int> preorderTraversal(TreeNode* root) {
 
 }
 
+vector<int> postorderTraversal(TreeNode* root) {
+	vector<int> result;
+	vector<int> temp(10);
+	if (root == NULL)
+	{
+		return result;
+	}
+	vector<int> l = postorderTraversal(root->left);
+	for (size_t i = 0; i < l.size(); i++)
+	{
+		result.push_back(l[i]);
+	}
+	vector<int> r = postorderTraversal(root->right);
+	for (size_t i = 0; i < r.size(); i++)
+	{
+		result.push_back(r[i]);
+	}
+	result.push_back(root->val);
+	return result;
+}
+
 
 int main()
 {
 	vector<int> preorder;
 	vector<int> inorder;
+	vector<int> postorder;
+
+
 	preorder.push_back(7);
 	preorder.push_back(10);
 	preorder.push_back(4);
@@ -57,10 +81,20 @@ int main()
 	inorder.push_back(8);
 	inorder.push_back(2);
 
+	postorder.push_back(4);
+	postorder.push_back(1);
+	postorder.push_back(3);
+	postorder.push_back(10);
+	postorder.push_back(11);
+	postorder.push_back(8);
+	postorder.push_back(2);
+	postorder.push_back(7);
+
 	Solution mySolution = Solution();
-	TreeNode* test = mySolution.buildTree(preorder, inorder);
+	TreeNode* test = mySolution.buildTree(inorder, postorder);
 
 	vector<int> re = preorderTraversal(test);
+	vector<int> pt = postorderTraversal(test);
 
 	getchar();
 	getchar();

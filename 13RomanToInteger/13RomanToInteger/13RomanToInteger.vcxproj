@@ -88,6 +88,7 @@
     <ClCompile Include="107BinaryTreeLevelOrderTraversal2.cpp" />
     <ClCompile Include="110BalancedBinaryTree.cpp" />
     <ClCompile Include="111MinimumDepthOfBinaryTree.cpp" />
+    <ClCompile Include="112PathSum.cpp" />
     <ClCompile Include="13RomanToInteger.cpp" />
     <ClCompile Include="144BinaryTreePreoderTraveral.cpp" />
     <ClCompile Include="145BinaryTreePostorderTraversal.cpp" />

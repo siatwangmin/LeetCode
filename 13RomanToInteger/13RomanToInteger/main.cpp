@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "100SameTree.cpp"
+#include "101SymmetricTree.cpp"
 
 using namespace std;
 
@@ -104,22 +104,14 @@ public:
 
 int main()
 {
-	TreeNode* root1 = new TreeNode(10);
-	TreeNode* left1 = new TreeNode(5);
-	TreeNode* right1 = new TreeNode(15);
-
-	TreeNode* root2 = new TreeNode(10);
-	TreeNode* left2 = new TreeNode(5);
-	TreeNode* right2 = new TreeNode(15);
-
+	TreeNode* root1 = new TreeNode(1);
+	TreeNode* left1 = new TreeNode(2);
+	
 	root1->left = left1;
-	root1->right = right1;
 
-	left2->right = right2;
-	root2->left = left2;
 
 	Solution sameTreeTest = Solution();
-	bool isSame = sameTreeTest.isSameTree(root1,root2);
+	bool isSame = sameTreeTest.isSymmetric(root1);
 
 
 

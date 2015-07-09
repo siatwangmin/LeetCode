@@ -78,6 +78,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="100SameTree.cpp" />
+    <ClCompile Include="101SymmetricTree.cpp" />
     <ClCompile Include="103BinaryTreeZigzagLevelOrderTraversal.cpp" />
     <ClCompile Include="104BinaryTreeLevelOrderTraversal.cpp" />
     <ClCompile Include="104MaximumDepthofBinaryTree.cpp" />

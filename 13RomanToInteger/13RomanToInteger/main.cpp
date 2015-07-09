@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "106ConstructBinaryTreefromInorderandPostorderTraversal.cpp"
+#include "100SameTree.cpp"
 
 using namespace std;
 
@@ -55,46 +55,73 @@ vector<int> postorderTraversal(TreeNode* root) {
 	return result;
 }
 
+class ConstructSolution {
+private:
+	vector<int> _inorder;
+	vector<int> _postorder;
+
+	TreeNode* recursiveBuild(int pStart, int pOffset, int iStart, int iOffset)
+	{
+		if (pOffset == -1)
+			return NULL;
+		TreeNode* root = new TreeNode(_postorder[pStart + pOffset]);
+
+		int mOffset;
+		for (size_t i = iStart; i < iStart + iOffset + 1; i++)
+		{
+			if (root->val == _inorder[i])
+			{
+				mOffset = i - iStart;
+				break;
+			}
+		}
+
+		int lpStart = pStart;
+		int lpOffset = mOffset - 1;
+		int rpStart = pStart + mOffset;
+		int rpOffset = pOffset - mOffset - 1;
+
+		int liStart = iStart;
+		int liOffset = mOffset - 1;
+		int riStart = iStart + mOffset + 1;
+		int riOffset = iOffset - mOffset - 1;
+
+		root->left = recursiveBuild(lpStart, lpOffset, liStart, liOffset);
+		root->right = recursiveBuild(rpStart, rpOffset, riStart, riOffset);
+
+		return root;
+
+
+	}
+
+public:
+	TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+		_inorder = inorder;
+		_postorder = postorder;
+		return recursiveBuild(0, _postorder.size() - 1, 0, _inorder.size() - 1);
+	}
+};
 
 int main()
 {
-	vector<int> preorder;
-	vector<int> inorder;
-	vector<int> postorder;
+	TreeNode* root1 = new TreeNode(10);
+	TreeNode* left1 = new TreeNode(5);
+	TreeNode* right1 = new TreeNode(15);
+
+	TreeNode* root2 = new TreeNode(10);
+	TreeNode* left2 = new TreeNode(5);
+	TreeNode* right2 = new TreeNode(15);
+
+	root1->left = left1;
+	root1->right = right1;
+
+	left2->right = right2;
+	root2->left = left2;
+
+	Solution sameTreeTest = Solution();
+	bool isSame = sameTreeTest.isSameTree(root1,root2);
 
 
-	preorder.push_back(7);
-	preorder.push_back(10);
-	preorder.push_back(4);
-	preorder.push_back(3);
-	preorder.push_back(1);
-	preorder.push_back(2);
-	preorder.push_back(8);
-	preorder.push_back(11);
-
-	inorder.push_back(4);
-	inorder.push_back(10);
-	inorder.push_back(3);
-	inorder.push_back(1);
-	inorder.push_back(7);
-	inorder.push_back(11);
-	inorder.push_back(8);
-	inorder.push_back(2);
-
-	postorder.push_back(4);
-	postorder.push_back(1);
-	postorder.push_back(3);
-	postorder.push_back(10);
-	postorder.push_back(11);
-	postorder.push_back(8);
-	postorder.push_back(2);
-	postorder.push_back(7);
-
-	Solution mySolution = Solution();
-	TreeNode* test = mySolution.buildTree(inorder, postorder);
-
-	vector<int> re = preorderTraversal(test);
-	vector<int> pt = postorderTraversal(test);
 
 	getchar();
 	getchar();

@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "116PopulatingNextRightPointersinEachNode.cpp"
+#include "70ClimbingStairs.cpp"
 
 using namespace std;
 
@@ -122,7 +122,11 @@ int main()
 	root->right = root3;
 	
 	Solution mySolution = Solution();
-	mySolution.connect(root);
+	
+	for (size_t i = 0; i < 5; i++)
+	{
+		cout << mySolution.climbStairs(i) << '\t';
+	}
 
 	getchar();
 	getchar();

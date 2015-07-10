@@ -99,6 +99,7 @@
     <ClCompile Include="199BinaryTreeRightSideView.cpp" />
     <ClCompile Include="217ContainDuplicate.cpp" />
     <ClCompile Include="226InvertBinaryTree.cpp" />
+    <ClCompile Include="70ClimbingStairs.cpp" />
     <ClCompile Include="94BinaryTreeInorderTraversal.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

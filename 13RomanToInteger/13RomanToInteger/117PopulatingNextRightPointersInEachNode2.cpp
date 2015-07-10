@@ -76,7 +76,7 @@ using namespace std;
 //};
 
 
-//方法二：参考116里面的方法实验一遍，情况太多咱不是实现
+//方法二：参考116里面的方法实验一遍，情况太多暂时还没有实现
 //class Solution {
 //public:
 //	void connect(TreeLinkNode *root) {

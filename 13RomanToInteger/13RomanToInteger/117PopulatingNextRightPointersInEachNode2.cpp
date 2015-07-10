@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <queue>
 #include "tree.h"
 
 using namespace std;
@@ -75,23 +76,78 @@ using namespace std;
 //};
 
 
-//方法二：用另外一种方法递归求出来了
+//方法二：参考116里面的方法实验一遍，情况太多咱不是实现
+//class Solution {
+//public:
+//	void connect(TreeLinkNode *root) {
+//		if (root == NULL)
+//		{
+//			return;
+//		}
+//		if (root->left != NULL && root->right != NULL)
+//		{
+//			root->left->next = root->right;
+//			if (root->next != NULL)
+//			{
+//				root->right->next = root->next->left;
+//			}
+//			connect(root->left);
+//			connect(root->right);
+//		}
+//	}
+//};
+
+//方法三：层序遍历参考104BinaryTreeLevelOrderTraversal.cpp加入一个Count计数来得到，类似于方法一
+
 class Solution {
+private:
+	void levelOrderLink(TreeLinkNode* root) {
+		queue<TreeLinkNode*> que;
+		TreeLinkNode* pre = NULL;
+		int count = 0;
+		int currentLeft = 1;
+
+		if (root == NULL)
+			return;
+
+		que.push(root);
+
+		while (!que.empty())
+		{
+			TreeLinkNode* temp2 = que.front();
+			que.pop();
+
+			currentLeft--;
+
+			if (temp2->left != NULL)
+			{
+				que.push(temp2->left);
+				count++;
+
+			}
+			if (temp2->right != NULL)
+			{
+				que.push(temp2->right);
+				count++;
+			}
+
+			if (pre != NULL)
+			{
+				pre->next = temp2;
+			}
+
+			pre = temp2;
+
+			if (currentLeft == 0)
+			{
+				currentLeft = count;
+				count = 0;
+				pre = NULL;
+			}
+		}
+	}
 public:
 	void connect(TreeLinkNode *root) {
-		if (root == NULL)
-		{
-			return;
-		}
-		if (root->left != NULL && root->right != NULL)
-		{
-			root->left->next = root->right;
-			if (root->next != NULL)
-			{
-				root->right->next = root->next->left;
-			}
-			connect(root->left);
-			connect(root->right);
-		}
+		levelOrderLink(root);
 	}
 };

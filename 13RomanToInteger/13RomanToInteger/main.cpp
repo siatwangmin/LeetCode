@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "70ClimbingStairs.cpp"
+#include "198HouseRobber.cpp"
 
 using namespace std;
 
@@ -119,14 +119,18 @@ int main()
 	root2->right = root5;
 
 	root->left = root2;
+
+
 	root->right = root3;
 	
+
+	vector<int> vec;
+	vec.push_back(2);
+	vec.push_back(1);
+	vec.push_back(1);
+	vec.push_back(2);
 	Solution mySolution = Solution();
-	
-	for (size_t i = 0; i < 5; i++)
-	{
-		cout << mySolution.climbStairs(i) << '\t';
-	}
+	cout << mySolution.rob(vec);
 
 	getchar();
 	getchar();

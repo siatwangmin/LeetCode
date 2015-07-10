@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "198HouseRobber.cpp"
+#include "213HouseRob2.cpp"
 
 using namespace std;
 
@@ -104,30 +104,12 @@ public:
 
 int main()
 {
-	TreeLinkNode* root = new TreeLinkNode(1);
-	TreeLinkNode* root2 = new TreeLinkNode(2);
-	TreeLinkNode* root3 = new TreeLinkNode(3);
-	TreeLinkNode* root4 = new TreeLinkNode(4);
-	TreeLinkNode* root5 = new TreeLinkNode(5);
-	TreeLinkNode* root6 = new TreeLinkNode(6);
-	TreeLinkNode* root7 = new TreeLinkNode(7);
-
-	root3->left = root6;
-	root3->right = root7;
-
-	root2->left = root4;
-	root2->right = root5;
-
-	root->left = root2;
-
-
-	root->right = root3;
-	
-
 	vector<int> vec;
+	vec.push_back(2);
 	vec.push_back(1);
 	vec.push_back(1);
-	vec.push_back(1);
+	vec.push_back(2);
+
 	Solution mySolution = Solution();
 	cout << mySolution.rob(vec);
 

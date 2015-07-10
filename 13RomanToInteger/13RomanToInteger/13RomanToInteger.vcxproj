@@ -98,6 +98,7 @@
     <ClCompile Include="191NumberOf1Bit.cpp" />
     <ClCompile Include="198HouseRobber.cpp" />
     <ClCompile Include="199BinaryTreeRightSideView.cpp" />
+    <ClCompile Include="213HouseRob2.cpp" />
     <ClCompile Include="217ContainDuplicate.cpp" />
     <ClCompile Include="226InvertBinaryTree.cpp" />
     <ClCompile Include="70ClimbingStairs.cpp" />

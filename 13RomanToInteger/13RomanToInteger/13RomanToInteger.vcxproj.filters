@@ -90,6 +90,9 @@
     <ClCompile Include="198HouseRobber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="213HouseRob2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree.h">

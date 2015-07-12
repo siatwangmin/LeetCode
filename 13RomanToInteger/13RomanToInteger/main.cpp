@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "213HouseRob2.cpp"
+#include "96UniqueBinarySearchTrees.cpp"
 
 using namespace std;
 
@@ -104,14 +104,12 @@ public:
 
 int main()
 {
-	vector<int> vec;
-	vec.push_back(2);
-	vec.push_back(1);
-	vec.push_back(1);
-	vec.push_back(2);
-
 	Solution mySolution = Solution();
-	cout << mySolution.rob(vec);
+	for (size_t i = 0; i < 5; i++)
+	{
+		cout << mySolution.numTrees(i) << '\t';
+	}
+
 
 	getchar();
 	getchar();

@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "96UniqueBinarySearchTrees.cpp"
+#include "108ConvertSortedArraytoBinarySearchTree.cpp"
 
 using namespace std;
 
@@ -104,11 +104,14 @@ public:
 
 int main()
 {
-	Solution mySolution = Solution();
-	for (size_t i = 0; i < 5; i++)
+	vector<int> testVec;
+	for (size_t i = 0; i < 9; i++)
 	{
-		cout << mySolution.numTrees(i) << '\t';
+		testVec.push_back(i);
 	}
+	Solution mySolution = Solution();
+	TreeNode* re = mySolution.sortedArrayToBST(testVec);
+
 
 
 	getchar();

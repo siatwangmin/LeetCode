@@ -103,6 +103,7 @@
     <ClCompile Include="213HouseRob2.cpp" />
     <ClCompile Include="217ContainDuplicate.cpp" />
     <ClCompile Include="226InvertBinaryTree.cpp" />
+    <ClCompile Include="230KthSmallestElementinaBST.cpp" />
     <ClCompile Include="235LowestCommonAncestorofaBinarySearchTree.cpp" />
     <ClCompile Include="236LowestCommonAncestorofaBinaryTree.cpp" />
     <ClCompile Include="70ClimbingStairs.cpp" />

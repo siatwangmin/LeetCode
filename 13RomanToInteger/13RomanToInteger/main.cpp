@@ -104,32 +104,35 @@ public:
 
 int main()
 {
-	TreeNode* root0 = new TreeNode(0);
-	TreeNode* root2 = new TreeNode(2);
-	TreeNode* root3 = new TreeNode(3);
-	TreeNode* root4 = new TreeNode(4);
-	TreeNode* root5 = new TreeNode(5);
-	TreeNode* root6 = new TreeNode(6);
-	TreeNode* root7 = new TreeNode(7);
+	TreeNode* root37 = new TreeNode(37);
+	TreeNode* root_34 = new TreeNode(-34);
+	TreeNode* root_48 = new TreeNode(-48);
+	TreeNode* root_100 = new TreeNode(-100);
+	TreeNode* root48 = new TreeNode(48);
+	TreeNode* root_54 = new TreeNode(-54);
+	TreeNode* root_71 = new TreeNode(-71);
+	TreeNode* root_22 = new TreeNode(-22);
 	TreeNode* root8 = new TreeNode(8);
-	TreeNode* root1 = new TreeNode(1);
 
+	root_22->right = root8;
 
-	root2->left = root7;
-	root2->right = root4;
-	
-	root5->left = root6;
-	root5->right = root2;
-	
-	root1->left = root0;
-	root1->right = root8;
-	
-	root3->left = root5;
-	root3->right = root1;
+	root_54->left = root_71;
+	root_54->right = root_22;
+
+	root48->left = root_54;
+
+	root_48->left = root_100;
+	root_48->right = root48;
+
+	root_34->right = root_100;
+
+	root37->left = root_34;
+
+	root37->right = root_48;
 	
 
 	Solution mySolution = Solution();
-	TreeNode* re = mySolution.lowestCommonAncestor(root3, root5, root1);
+	TreeNode* re = mySolution.lowestCommonAncestor(root37, root_48, root8);
 	cout << re->val;
 
 

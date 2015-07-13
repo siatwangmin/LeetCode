@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "108ConvertSortedArraytoBinarySearchTree.cpp"
+#include "129SumRoottoLeafNumbers.cpp"
 
 using namespace std;
 
@@ -104,13 +104,17 @@ public:
 
 int main()
 {
-	vector<int> testVec;
-	for (size_t i = 0; i < 9; i++)
-	{
-		testVec.push_back(i);
-	}
+	TreeNode* root4 = new TreeNode(4);
+	TreeNode* root9 = new TreeNode(9);
+	TreeNode* root1 = new TreeNode(1);
+	TreeNode* root0 = new TreeNode(0);
+
+	root9->right = root1;
+	root4->left = root9;
+	root4->right = root0;
+
 	Solution mySolution = Solution();
-	TreeNode* re = mySolution.sortedArrayToBST(testVec);
+	cout << mySolution.sumNumbers(root4);
 
 
 

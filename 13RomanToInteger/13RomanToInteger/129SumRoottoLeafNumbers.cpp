@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "tree.h"
 
 using namespace std;
@@ -24,27 +25,34 @@ using namespace std;
 
 class Solution {
 private:
-	int RecursiveSum(TreeNode* root)
+	vector<int> vec;
+	int sum;
+	void RecursiveSum(TreeNode* root)
 	{
+		int num = 0;
 		if (root == NULL)
-			return 0;
-		int result = 0;
-		if (root->left != NULL)
+			return;
+		vec.push_back(root->val);
+
+		
+		if (root->left == NULL  && root->right == NULL)
 		{
-			result += root->val *10 + RecursiveSum(root->left);
+			for (size_t i = 0; i < vec.size(); i++)
+			{
+				num = num * 10 + vec[i];
+			}
+			sum += num;
 		}
-		if (root->right != NULL)
-		{
-			result += root -> val* 10 + RecursiveSum(root->right);
-		}
-		if (root->left == NULL && root->right == NULL)
-		{
-			result += root->val;
-		}
-		return result;
+
+		RecursiveSum(root->left);
+		RecursiveSum(root->right);
+		vec.pop_back();
+
 	}
 public:
 	int sumNumbers(TreeNode* root) {
-		return RecursiveSum(root);
+		sum = 0;
+		RecursiveSum(root);
+		return sum;
 	}
 };

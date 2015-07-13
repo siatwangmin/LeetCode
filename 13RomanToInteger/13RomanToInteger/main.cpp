@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "235LowestCommonAncestorofaBinarySearchTree.cpp"
+#include "236LowestCommonAncestorofaBinaryTree.cpp"
 
 using namespace std;
 
@@ -112,24 +112,25 @@ int main()
 	TreeNode* root6 = new TreeNode(6);
 	TreeNode* root7 = new TreeNode(7);
 	TreeNode* root8 = new TreeNode(8);
-	TreeNode* root9 = new TreeNode(9);
+	TreeNode* root1 = new TreeNode(1);
 
 
-	root4->left = root3;
-	root4->right = root5;
-	root2->left = root0;
+	root2->left = root7;
 	root2->right = root4;
-
-
-	root8->left = root7;
-	root8->right = root9;
 	
-	root6->left = root2;
-	root6->right = root8;
+	root5->left = root6;
+	root5->right = root2;
+	
+	root1->left = root0;
+	root1->right = root8;
+	
+	root3->left = root5;
+	root3->right = root1;
 	
 
 	Solution mySolution = Solution();
-	cout << mySolution.lowestCommonAncestor(root6, root9, root7)->val;
+	TreeNode* re = mySolution.lowestCommonAncestor(root3, root5, root1);
+	cout << re->val;
 
 
 

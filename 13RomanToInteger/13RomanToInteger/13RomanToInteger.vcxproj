@@ -104,6 +104,7 @@
     <ClCompile Include="217ContainDuplicate.cpp" />
     <ClCompile Include="226InvertBinaryTree.cpp" />
     <ClCompile Include="235LowestCommonAncestorofaBinarySearchTree.cpp" />
+    <ClCompile Include="236LowestCommonAncestorofaBinaryTree.cpp" />
     <ClCompile Include="70ClimbingStairs.cpp" />
     <ClCompile Include="94BinaryTreeInorderTraversal.cpp" />
     <ClCompile Include="96UniqueBinarySearchTrees.cpp" />

@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "129SumRoottoLeafNumbers.cpp"
+#include "235LowestCommonAncestorofaBinarySearchTree.cpp"
 
 using namespace std;
 
@@ -104,17 +104,32 @@ public:
 
 int main()
 {
-	TreeNode* root4 = new TreeNode(4);
-	TreeNode* root9 = new TreeNode(9);
-	TreeNode* root1 = new TreeNode(1);
 	TreeNode* root0 = new TreeNode(0);
+	TreeNode* root2 = new TreeNode(2);
+	TreeNode* root3 = new TreeNode(3);
+	TreeNode* root4 = new TreeNode(4);
+	TreeNode* root5 = new TreeNode(5);
+	TreeNode* root6 = new TreeNode(6);
+	TreeNode* root7 = new TreeNode(7);
+	TreeNode* root8 = new TreeNode(8);
+	TreeNode* root9 = new TreeNode(9);
 
-	root9->right = root1;
-	root4->left = root9;
-	root4->right = root0;
+
+	root4->left = root3;
+	root4->right = root5;
+	root2->left = root0;
+	root2->right = root4;
+
+
+	root8->left = root7;
+	root8->right = root9;
+	
+	root6->left = root2;
+	root6->right = root8;
+	
 
 	Solution mySolution = Solution();
-	cout << mySolution.sumNumbers(root4);
+	cout << mySolution.lowestCommonAncestor(root6, root9, root7)->val;
 
 
 

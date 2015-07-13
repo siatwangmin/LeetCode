@@ -102,6 +102,9 @@
     <ClCompile Include="129SumRoottoLeafNumbers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="235LowestCommonAncestorofaBinarySearchTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree.h">

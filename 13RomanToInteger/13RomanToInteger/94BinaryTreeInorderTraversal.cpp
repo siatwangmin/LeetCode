@@ -52,7 +52,7 @@ public:
 
 class TestClass{
 public :
-	static TreeNode* getTestData()
+	static TreeNode* GetTestData()
 	{
 		TreeNode* root0 = new TreeNode(0);
 		TreeNode* root2 = new TreeNode(2);

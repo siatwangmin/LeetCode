@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "145BinaryTreePostorderTraversal.cpp"
+#include "173BinarySearchTreeIterator.cpp"
 
 using namespace std;
 
@@ -13,9 +13,11 @@ int main()
 	TestClass myTestClass = TestClass();
 
 
-	Solution mySolution = Solution();
+	
 	TreeNode* test = myTestClass.GetTestData();
-	vector<int> re = mySolution.postorderTraversal(test);
+	
+	BSTIterator i = BSTIterator(test);
+	while (i.hasNext()) cout << i.next();
 	
 	getchar();
 	getchar();

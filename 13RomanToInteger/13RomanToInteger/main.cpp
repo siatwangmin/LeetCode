@@ -4,21 +4,16 @@
 #include <queue>
 #include <stack>
 
-#include "173BinarySearchTreeIterator.cpp"
+#include "114FlattenBinaryTreetoLinkedList.cpp"
 
 using namespace std;
 
 int main()
 {
 	TestClass myTestClass = TestClass();
-
-
-	
-	TreeNode* test = myTestClass.GetTestData();
-	
-	BSTIterator i = BSTIterator(test);
-	while (i.hasNext()) cout << i.next();
-	
+	TreeNode* root = myTestClass.GetTestData();
+	Solution mySolution = Solution();
+	mySolution.flatten(root);
 	getchar();
 	getchar();
 	return 0;

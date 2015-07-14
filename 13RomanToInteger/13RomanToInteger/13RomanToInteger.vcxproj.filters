@@ -120,6 +120,9 @@
     <ClCompile Include="99RecoverBinarySearchTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="98ValidateBinarySearchTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree.h">

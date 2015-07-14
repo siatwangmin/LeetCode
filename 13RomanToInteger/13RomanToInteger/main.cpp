@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "99RecoverBinarySearchTree.cpp"
+#include "98ValidateBinarySearchTree.cpp"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ int main()
 	TestClass myTestClass = TestClass();
 	TreeNode* root = myTestClass.GetTestData();
 	Solution mySolution = Solution();
-	mySolution.recoverTree(root);
+	bool re = mySolution.isValidBST(root);
 	getchar();
 	getchar();
 	return 0;

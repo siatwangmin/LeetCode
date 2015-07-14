@@ -56,26 +56,31 @@ private:
 
 		if (maxHeight == -1)
 		{
-			maxHeight = vec.size();
-			lastLevelCount++;
+			if (root->left == NULL && root->right == NULL)
+			{
+				maxHeight = vec.size();
+				lastLevelCount++;
+			}
 		}
 		else
 		{
-			if (vec.size() < maxHeight)
+			if (root->left == NULL && root->right == NULL)
 			{
-				flag = true;
-				return;
+				if (maxHeight > vec.size())
+				{
+					flag = true;
+					return;
+				}			
+				lastLevelCount++;				
 			}
-				
-			lastLevelCount++;
+			
 		}
 		vec.pop_back();	
 	}
 public:
 	int countNodes(TreeNode* root) {
 		Recursive(root);
-		cout << maxHeight << '\t' << lastLevelCount << endl;
-		return pow(2, maxHeight) - 1 + lastLevelCount;
+		return pow(2, maxHeight - 1) - 1 + lastLevelCount;
 	}
 };
 
@@ -94,10 +99,7 @@ public:
 		TreeNode* root9 = new TreeNode(9);
 
 		root2->left = root0;
-		root2->right = root4;
 
-		root8->left = root7;
-		root8->right = root9;
 
 		root6->left = root2;
 		root6->right = root8;

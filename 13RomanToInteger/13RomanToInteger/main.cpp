@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "114FlattenBinaryTreetoLinkedList.cpp"
+#include "99RecoverBinarySearchTree.cpp"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ int main()
 	TestClass myTestClass = TestClass();
 	TreeNode* root = myTestClass.GetTestData();
 	Solution mySolution = Solution();
-	mySolution.flatten(root);
+	mySolution.recoverTree(root);
 	getchar();
 	getchar();
 	return 0;

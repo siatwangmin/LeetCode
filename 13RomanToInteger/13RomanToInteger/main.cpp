@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "98ValidateBinarySearchTree.cpp"
+#include "222CountCompleteTreeNodes.cpp"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ int main()
 	TestClass myTestClass = TestClass();
 	TreeNode* root = myTestClass.GetTestData();
 	Solution mySolution = Solution();
-	bool re = mySolution.isValidBST(root);
+	cout<< mySolution.countNodes(root);
 	getchar();
 	getchar();
 	return 0;

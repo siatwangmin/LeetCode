@@ -111,6 +111,9 @@
     <ClCompile Include="230KthSmallestElementinaBST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="173BinarySearchTreeIterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree.h">

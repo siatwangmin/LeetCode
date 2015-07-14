@@ -132,3 +132,36 @@ public:
 		return left != NULL ? left : right;
 	}
 };
+
+class TestClass{
+public:
+	TreeNode* getTestData()
+	{
+		TreeNode* root37 = new TreeNode(37);
+		TreeNode* root_34 = new TreeNode(-34);
+		TreeNode* root_48 = new TreeNode(-48);
+		TreeNode* root_100 = new TreeNode(-100);
+		TreeNode* root48 = new TreeNode(48);
+		TreeNode* root_54 = new TreeNode(-54);
+		TreeNode* root_71 = new TreeNode(-71);
+		TreeNode* root_22 = new TreeNode(-22);
+		TreeNode* root8 = new TreeNode(8);
+
+		root_22->right = root8;
+
+		root_54->left = root_71;
+		root_54->right = root_22;
+
+		root48->left = root_54;
+
+		root_48->left = root_100;
+		root_48->right = root48;
+
+		root_34->right = root_100;
+
+		root37->left = root_34;
+
+		root37->right = root_48;
+		return root37;
+	}
+};

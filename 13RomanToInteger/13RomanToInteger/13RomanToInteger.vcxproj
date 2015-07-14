@@ -97,6 +97,7 @@
     <ClCompile Include="13RomanToInteger.cpp" />
     <ClCompile Include="144BinaryTreePreoderTraveral.cpp" />
     <ClCompile Include="145BinaryTreePostorderTraversal.cpp" />
+    <ClCompile Include="173BinarySearchTreeIterator.cpp" />
     <ClCompile Include="191NumberOf1Bit.cpp" />
     <ClCompile Include="198HouseRobber.cpp" />
     <ClCompile Include="199BinaryTreeRightSideView.cpp" />

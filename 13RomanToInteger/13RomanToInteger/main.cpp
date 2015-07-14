@@ -4,7 +4,7 @@
 #include <queue>
 #include <stack>
 
-#include "144BinaryTreePreoderTraveral.cpp"
+#include "145BinaryTreePostorderTraversal.cpp"
 
 using namespace std;
 
@@ -15,7 +15,7 @@ int main()
 
 	Solution mySolution = Solution();
 	TreeNode* test = myTestClass.GetTestData();
-	vector<int> re = mySolution.preorderTraversal(test);
+	vector<int> re = mySolution.postorderTraversal(test);
 	
 	getchar();
 	getchar();

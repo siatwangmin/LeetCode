@@ -21,6 +21,9 @@
     <ClCompile Include="232ImplementQueueusingStacks.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="20ValidParentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree.h">

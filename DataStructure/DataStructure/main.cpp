@@ -3,23 +3,28 @@
 #include <vector>
 #include "tree.h"
 
-#include "225ImplementStackusingQueues.cpp"
+#include "155MinStack.cpp"
 
 
 using namespace std;
 
 int main()
 {
-	Stack myStack = Stack();
-	for (size_t i = 0; i < 10; i++)
+	MinStack mySta = MinStack();
+
+	for (size_t i = 5; i > 0; i--)
 	{
-		myStack.push(i);
+		mySta.push(i);
+		cout << mySta.getMin();
 	}
-	while (!myStack.empty())
-	{
-		cout << myStack.top() << endl;
-		myStack.pop();
-	}
+	cout << endl;
+	mySta.pop();
+	mySta.pop();
+	mySta.pop();
+	mySta.pop();
+	mySta.pop();
+	cout << mySta.getMin();
+
 	getchar();
 	getchar();
 	return 0 ;

@@ -37,50 +37,79 @@ using namespace std;
 //	}
 //};
 
+//·½·¨¶þ£ºtime out
+//class Solution {
+//private:
+//	vector<int> vec;
+//	int maxHeight = -1;
+//	int lastLevelCount = 0;
+//	bool flag = false;
+//	void Recursive(TreeNode* root)
+//	{
+//		if (root == NULL)
+//			return;
+//		vec.push_back(root->val);
+//		if(!flag)
+//			Recursive(root->left);
+//		if(!flag)
+//			Recursive(root->right);
+//
+//		if (maxHeight == -1)
+//		{
+//			if (root->left == NULL && root->right == NULL)
+//			{
+//				maxHeight = vec.size();
+//				lastLevelCount++;
+//			}
+//		}
+//		else
+//		{
+//			if (root->left == NULL && root->right == NULL)
+//			{
+//				if (maxHeight > vec.size())
+//				{
+//					flag = true;
+//					return;
+//				}			
+//				lastLevelCount++;				
+//			}
+//			
+//		}
+//		vec.pop_back();	
+//	}
+//public:
+//	int countNodes(TreeNode* root) {
+//		Recursive(root);
+//		return pow(2, maxHeight - 1) - 1 + lastLevelCount;
+//	}
+//};
+
 
 class Solution {
-private:
-	vector<int> vec;
-	int maxHeight = -1;
-	int lastLevelCount = 0;
-	bool flag = false;
-	void Recursive(TreeNode* root)
-	{
-		if (root == NULL)
-			return;
-		vec.push_back(root->val);
-		if(!flag)
-			Recursive(root->left);
-		if(!flag)
-			Recursive(root->right);
-
-		if (maxHeight == -1)
-		{
-			if (root->left == NULL && root->right == NULL)
-			{
-				maxHeight = vec.size();
-				lastLevelCount++;
-			}
-		}
-		else
-		{
-			if (root->left == NULL && root->right == NULL)
-			{
-				if (maxHeight > vec.size())
-				{
-					flag = true;
-					return;
-				}			
-				lastLevelCount++;				
-			}
-			
-		}
-		vec.pop_back();	
-	}
 public:
 	int countNodes(TreeNode* root) {
-		Recursive(root);
-		return pow(2, maxHeight - 1) - 1 + lastLevelCount;
+		if (root == NULL)
+		{
+			return 0;
+		}
+		int hr = 0, hl = 0;
+		TreeNode* l = root;
+		TreeNode* r = root;
+		while (l)
+		{
+			hl++;
+			l = l->left;
+		}
+		while (r)
+		{
+			hr++;
+			r = r->right;
+		}
+		if (hr == hl)
+		{
+			return pow(2, hl) - 1;
+		}
+		return 1 + countNodes(root->left) + countNodes(root->right);
 	}
 };
 

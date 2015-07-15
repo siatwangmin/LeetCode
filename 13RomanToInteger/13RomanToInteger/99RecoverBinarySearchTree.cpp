@@ -62,37 +62,38 @@ using namespace std;
 //	}
 //};
 
-//这段代码是！！！！！！错误的！！！！！
 class Solution {
 private:
-	void RecursiveFind(TreeNode* root)
+	TreeNode* pre;
+	TreeNode* first;
+	TreeNode* second;
+	void InorderTraversal(TreeNode* root)
 	{
 		if (root == NULL)
 			return;
-		RecursiveFind(root->left);
-		RecursiveFind(root->right);
-		if (root->left != NULL )
+		InorderTraversal(root->left);
+		
+		if (pre != NULL && first == NULL && pre->val >= root->val)
 		{
-			if (root->left->val > root->val)
-			{
-				int temp = root->left->val;
-				root->left->val = root->val;
-				root->val = temp;
-			}
+			first = pre;
 		}
-		if (root->right != NULL)
+		if (pre != NULL && first != NULL && pre->val >= root->val)
 		{
-			if (root->right->val < root->val)
-			{
-				int temp = root->right->val;
-				root->right->val = root->val;
-				root->val = temp;
-			}
+			second = root;
 		}
+		pre = root;
+		InorderTraversal(root->right);
 	}
 
 public:
 	void recoverTree(TreeNode* root) {
+		InorderTraversal(root);
+		if (first != NULL && second != NULL)
+		{
+			int temp = first->val;
+			first->val = second->val;
+			second->val = temp;
+		}
 	}
 };
 

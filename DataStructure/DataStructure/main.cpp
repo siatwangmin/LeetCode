@@ -3,39 +3,23 @@
 #include <vector>
 #include "tree.h"
 
-#include "232ImplementQueueusingStacks.cpp"
+#include "225ImplementStackusingQueues.cpp"
 
 
 using namespace std;
 
 int main()
 {
-	Queue myQue = Queue();
+	Stack myStack = Stack();
 	for (size_t i = 0; i < 10; i++)
 	{
-		myQue.push(i);
+		myStack.push(i);
 	}
-
-	//queue<int> testQue;
-	//testQue.push(1);
-	//cout << testQue.front() << endl;
-	//testQue.pop();
-	//testQue.pop();
-	//cout << testQue.front() << endl;
-
-	//myQue.pop();
-
-	//while (!myQue.empty())
-	//{
-	//	cout << myQue.peek() << endl;
-	//	myQue.pop();
-	//}
-	for (size_t j = 0; j < 20; j++)
+	while (!myStack.empty())
 	{
-		cout << j << ":" << myQue.peek() << endl;
-		myQue.pop();
+		cout << myStack.top() << endl;
+		myStack.pop();
 	}
-	
 	getchar();
 	getchar();
 	return 0 ;

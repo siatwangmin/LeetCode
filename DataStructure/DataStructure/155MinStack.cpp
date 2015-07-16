@@ -21,14 +21,22 @@ class MinStack {
 	DoubleListNode* cur;
 	DoubleListNode* pre;
 public:
+	MinStack()
+	{
+		minNode = new DoubleListNode(0);
+	}
 	void push(int x) {
 		DoubleListNode* myNode = new DoubleListNode(x);
 		
-		if (minNode == NULL)
-			minNode = myNode;
+		if (minNode->next == NULL)
+		{
+			minNode->next = myNode;
+			myNode->pre = minNode;
+		}
 		else
 		{
-			cur = minNode;
+			cur = minNode->next;
+			pre = minNode;
 			while (cur != NULL && myNode->val > cur->val)
 			{
 				pre = cur;
@@ -40,12 +48,17 @@ public:
 			myNode->next = cur;
 			if (cur != NULL)
 				cur->pre = myNode;
+
 		}
 		sta.push_back(myNode);
 	}
 
 	void pop() {
 		DoubleListNode* stackTop = sta[sta.size() - 1];
+		if (stackTop == minNode->next)
+		{
+			minNode = stackTop->next;
+		}
 		if (stackTop->pre != NULL)
 			stackTop->pre->next = stackTop->next;
 		if (stackTop->next != NULL)
@@ -59,6 +72,6 @@ public:
 	}
 
 	int getMin() {
-		return 0;
+		return minNode->next->val;
 	}
 };

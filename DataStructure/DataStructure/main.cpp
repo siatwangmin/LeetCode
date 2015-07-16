@@ -12,18 +12,37 @@ int main()
 {
 	MinStack mySta = MinStack();
 
-	for (size_t i = 5; i > 0; i--)
-	{
-		mySta.push(i);
-		cout << mySta.getMin();
-	}
-	cout << endl;
+	mySta.push(2147483646);
+	mySta.push(2147483646);
+	mySta.push(2147483647);
+
+	cout << mySta.top() << endl;
+
 	mySta.pop();
+
+	cout << mySta.getMin() << endl;
+
 	mySta.pop();
+
+	cout << mySta.getMin() << endl;
+
 	mySta.pop();
+
+	mySta.push(2147483647);
+
+	cout << mySta.top() << endl;
+
+	cout << mySta.getMin() << endl;
+
+	mySta.push(2147483648);
+
+	cout << mySta.top() << endl;
+
+	cout << mySta.getMin() << endl;
+
 	mySta.pop();
-	mySta.pop();
-	cout << mySta.getMin();
+
+	cout << mySta.getMin() << endl;
 
 	getchar();
 	getchar();

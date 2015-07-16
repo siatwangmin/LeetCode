@@ -59,5 +59,6 @@ public:
 	}
 
 	int getMin() {
+		return 0;
 	}
 };

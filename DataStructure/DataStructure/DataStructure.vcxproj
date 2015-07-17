@@ -82,6 +82,8 @@
     <ClCompile Include="225ImplementStackusingQueues.cpp" />
     <ClCompile Include="20ValidParentheses.cpp" />
     <ClCompile Include="232ImplementQueueusingStacks.cpp" />
+    <ClCompile Include="237DeleteNodeinaLinkeList.cpp" />
+    <ClCompile Include="71SimplifyPath.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

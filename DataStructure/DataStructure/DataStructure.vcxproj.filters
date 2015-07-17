@@ -30,6 +30,12 @@
     <ClCompile Include="20ValidParentheses.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="71SimplifyPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="237DeleteNodeinaLinkeList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree.h">

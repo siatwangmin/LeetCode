@@ -2,49 +2,29 @@
 #include <queue>
 #include <vector>
 #include "tree.h"
+#include <string>
+#include "link.h"
 
-#include "155MinStack.cpp"
+#include "237DeleteNodeinaLinkeList.cpp"
 
 
 using namespace std;
 
 int main()
 {
-	MinStack mySta = MinStack();
+	ListNode* node1 = new ListNode(1);
+	ListNode* node2 = new ListNode(2);
+	ListNode* node3 = new ListNode(3);
+	ListNode* node4 = new ListNode(4);
+	
+	node3->next = node4;
+	node2->next = node3;
+	node1->next = node2;
 
-	mySta.push(6);
-	mySta.push(6);
-	mySta.push(7);
-
-	cout << mySta.top() << endl;
-
-	mySta.pop();
-
-	cout << mySta.getMin() << endl;
-
-	mySta.pop();
-
-	cout << mySta.getMin() << endl;
-
-	mySta.pop();
-
-	mySta.push(7);
-
-	cout << mySta.top() << endl;
-
-	cout << mySta.getMin() << endl;
-
-	mySta.push(8);
-
-	cout << mySta.top() << endl;
-
-	cout << mySta.getMin() << endl;
-
-	mySta.pop();
-
-	cout << mySta.getMin() << endl;
+	Solution mySolution = Solution();
+	mySolution.deleteNode(node3);
 
 	getchar();
 	getchar();
-	return 0 ;
+	return 0;
 }

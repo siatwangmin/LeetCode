@@ -12,9 +12,9 @@ int main()
 {
 	MinStack mySta = MinStack();
 
-	mySta.push(2147483646);
-	mySta.push(2147483646);
-	mySta.push(2147483647);
+	mySta.push(6);
+	mySta.push(6);
+	mySta.push(7);
 
 	cout << mySta.top() << endl;
 
@@ -28,13 +28,13 @@ int main()
 
 	mySta.pop();
 
-	mySta.push(2147483647);
+	mySta.push(7);
 
 	cout << mySta.top() << endl;
 
 	cout << mySta.getMin() << endl;
 
-	mySta.push(2147483648);
+	mySta.push(8);
 
 	cout << mySta.top() << endl;
 

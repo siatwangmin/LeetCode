@@ -5,24 +5,34 @@
 #include <string>
 #include "link.h"
 
-#include "237DeleteNodeinaLinkeList.cpp"
+#include "42TrappingRainWater.cpp"
 
 
 using namespace std;
 
 int main()
 {
-	ListNode* node1 = new ListNode(1);
-	ListNode* node2 = new ListNode(2);
-	ListNode* node3 = new ListNode(3);
-	ListNode* node4 = new ListNode(4);
-	
-	node3->next = node4;
-	node2->next = node3;
-	node1->next = node2;
+	vector<int> test;
+	test.push_back(0);
+	test.push_back(1);
+	test.push_back(0);
+	test.push_back(2);
+	test.push_back(1);
+	test.push_back(0);
+	test.push_back(1);
+	test.push_back(3);
+	test.push_back(2);
+	test.push_back(1);
+	test.push_back(2);
+	test.push_back(1);
 
+	vector<int> test2;
+	test2.push_back(4);
+	test2.push_back(2);
+	test2.push_back(3);
 	Solution mySolution = Solution();
-	mySolution.deleteNode(node3);
+	int re = mySolution.trap(test);
+	int re2 = mySolution.trap(test2);
 
 	getchar();
 	getchar();

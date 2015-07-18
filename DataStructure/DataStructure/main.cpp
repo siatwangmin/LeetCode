@@ -5,7 +5,7 @@
 #include <string>
 #include "link.h"
 
-#include "150EvaluateReversePolishNotation.cpp"
+#include "224BasicCalculator.cpp"
 
 
 using namespace std;
@@ -28,8 +28,8 @@ int main()
 	TestClass testClass = TestClass();
 
 	Solution mySolution = Solution();
-	int re = mySolution.evalRPN(testClass.GetTestData());
-
+	int re = mySolution.calculate(testClass.GetTestData());
+	cout << re << endl;
 	getchar();
 	getchar();
 	return 0;

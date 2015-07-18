@@ -81,6 +81,7 @@
     <ClCompile Include="136SingleNumber.cpp" />
     <ClCompile Include="150EvaluateReversePolishNotation.cpp" />
     <ClCompile Include="155MinStack.cpp" />
+    <ClCompile Include="224BasicCalculator.cpp" />
     <ClCompile Include="225ImplementStackusingQueues.cpp" />
     <ClCompile Include="20ValidParentheses.cpp" />
     <ClCompile Include="232ImplementQueueusingStacks.cpp" />

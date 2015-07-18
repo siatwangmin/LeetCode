@@ -5,14 +5,14 @@
 #include <string>
 #include "link.h"
 
-#include "136SingleNumber.cpp"
+#include "150EvaluateReversePolishNotation.cpp"
 
 
 using namespace std;
 
 int main()
 {
-	vector<int> test;
+	//vector<string> test;
 	//test.push_back(0);
 	//test.push_back(0);
 	//test.push_back(1);
@@ -25,8 +25,10 @@ int main()
 	//test.push_back(5);
 	//test.push_back(5);
 
+	TestClass testClass = TestClass();
+
 	Solution mySolution = Solution();
-	int re = mySolution.singleNumber(test);
+	int re = mySolution.evalRPN(testClass.GetTestData());
 
 	getchar();
 	getchar();

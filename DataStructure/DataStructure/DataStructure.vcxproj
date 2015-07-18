@@ -79,6 +79,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="136SingleNumber.cpp" />
+    <ClCompile Include="150EvaluateReversePolishNotation.cpp" />
     <ClCompile Include="155MinStack.cpp" />
     <ClCompile Include="225ImplementStackusingQueues.cpp" />
     <ClCompile Include="20ValidParentheses.cpp" />

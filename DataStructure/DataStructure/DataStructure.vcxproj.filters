@@ -39,6 +39,9 @@
     <ClCompile Include="42TrappingRainWater.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="136SingleNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree.h">

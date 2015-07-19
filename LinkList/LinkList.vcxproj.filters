@@ -26,5 +26,8 @@
     <ClCompile Include="83RemoveDuplicatesfromSortedList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="21MergeTwoSortedLists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

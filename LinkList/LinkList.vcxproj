@@ -81,6 +81,7 @@
     <ClInclude Include="linklist.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="21MergeTwoSortedLists.cpp" />
     <ClCompile Include="83RemoveDuplicatesfromSortedList.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

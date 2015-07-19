@@ -3,7 +3,7 @@
 #include "linklist.h"
 
 
-#include "83RemoveDuplicatesfromSortedList.cpp"
+#include "21MergeTwoSortedLists.cpp"
 
 using namespace std;
 
@@ -15,7 +15,7 @@ int main()
 	Solution mySolution = Solution();
 	TestClass myTest = TestClass();
 	
-	ListNode* re = mySolution.deleteDuplicates(myTest.GetTestData());
+	ListNode* re = mySolution.mergeTwoLists(myTest.GetTestData1(),myTest.GetTestData2());
 
 
 	clock_t endTime = clock();

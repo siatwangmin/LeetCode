@@ -47,5 +47,8 @@
     <ClCompile Include="141LinkedListCycle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="24SwapNodesinPairs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

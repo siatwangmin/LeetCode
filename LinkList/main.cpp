@@ -3,7 +3,7 @@
 #include "linklist.h"
 
 
-#include "234PalindromeLinkedList.cpp"
+#include "160IntersectionofTwoLinkedLists.cpp"
 
 using namespace std;
 
@@ -15,9 +15,9 @@ int main()
 	Solution mySolution = Solution();
 	TestClass myTest = TestClass();
 	
-	bool re1 = mySolution.isPalindrome(myTest.GetTestData1());
-	bool re2 = mySolution.isPalindrome(myTest.GetTestData2());
-
+	ListNode* A = myTest.GetTestData1();
+	ListNode* B = myTest.GetTestData2();
+	ListNode* re1 = mySolution.getIntersectionNode(A,B);
 
 	clock_t endTime = clock();
 

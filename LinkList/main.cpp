@@ -3,7 +3,7 @@
 #include "linklist.h"
 
 
-#include "206ReverseLinkedList.cpp"
+#include "141LinkedListCycle.cpp"
 
 using namespace std;
 
@@ -15,12 +15,11 @@ int main()
 	Solution mySolution = Solution();
 	TestClass myTest = TestClass();
 	
-	ListNode* A = myTest.GetTestData1();
-	ListNode* B = myTest.GetTestData2();
-	ListNode* re0 = mySolution.reverseList(NULL);
-	ListNode* re1 = mySolution.reverseList(A);
-	ListNode* re2 = mySolution.reverseList(B);
-	ListNode* re3 = mySolution.reverseList(myTest.GetTestData3());
+	
+	bool re0 = mySolution.hasCycle(NULL);
+	bool re1 = mySolution.hasCycle(myTest.GetTestData1());
+	bool re2 = mySolution.hasCycle(myTest.GetTestData2());
+	bool re3 = mySolution.hasCycle(myTest.GetTestData3());
 
 	clock_t endTime = clock();
 

@@ -3,7 +3,7 @@
 #include "linklist.h"
 
 
-#include "21MergeTwoSortedLists.cpp"
+#include "203RemoveLinkedListElements.cpp"
 
 using namespace std;
 
@@ -15,7 +15,7 @@ int main()
 	Solution mySolution = Solution();
 	TestClass myTest = TestClass();
 	
-	ListNode* re = mySolution.mergeTwoLists(myTest.GetTestData1(),myTest.GetTestData2());
+	ListNode* re = mySolution.removeElements(myTest.GetTestData2(),1);
 
 
 	clock_t endTime = clock();

@@ -3,7 +3,7 @@
 #include "linklist.h"
 
 
-#include "19RemoveNthNodeFromEndofList.cpp"
+#include "234PalindromeLinkedList.cpp"
 
 using namespace std;
 
@@ -15,7 +15,8 @@ int main()
 	Solution mySolution = Solution();
 	TestClass myTest = TestClass();
 	
-	ListNode* re = mySolution.removeNthFromEnd(myTest.GetTestData(),1);
+	bool re1 = mySolution.isPalindrome(myTest.GetTestData1());
+	bool re2 = mySolution.isPalindrome(myTest.GetTestData2());
 
 
 	clock_t endTime = clock();

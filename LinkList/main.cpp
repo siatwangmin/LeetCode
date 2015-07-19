@@ -3,7 +3,7 @@
 #include "linklist.h"
 
 
-#include "160IntersectionofTwoLinkedLists.cpp"
+#include "206ReverseLinkedList.cpp"
 
 using namespace std;
 
@@ -17,7 +17,10 @@ int main()
 	
 	ListNode* A = myTest.GetTestData1();
 	ListNode* B = myTest.GetTestData2();
-	ListNode* re1 = mySolution.getIntersectionNode(A,B);
+	ListNode* re0 = mySolution.reverseList(NULL);
+	ListNode* re1 = mySolution.reverseList(A);
+	ListNode* re2 = mySolution.reverseList(B);
+	ListNode* re3 = mySolution.reverseList(myTest.GetTestData3());
 
 	clock_t endTime = clock();
 

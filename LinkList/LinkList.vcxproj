@@ -84,6 +84,7 @@
     <ClCompile Include="160IntersectionofTwoLinkedLists.cpp" />
     <ClCompile Include="19RemoveNthNodeFromEndofList.cpp" />
     <ClCompile Include="203RemoveLinkedListElements.cpp" />
+    <ClCompile Include="206ReverseLinkedList.cpp" />
     <ClCompile Include="21MergeTwoSortedLists.cpp" />
     <ClCompile Include="234PalindromeLinkedList.cpp" />
     <ClCompile Include="83RemoveDuplicatesfromSortedList.cpp" />

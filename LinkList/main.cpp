@@ -3,7 +3,7 @@
 #include "linklist.h"
 
 
-#include "203RemoveLinkedListElements.cpp"
+#include "19RemoveNthNodeFromEndofList.cpp"
 
 using namespace std;
 
@@ -15,7 +15,7 @@ int main()
 	Solution mySolution = Solution();
 	TestClass myTest = TestClass();
 	
-	ListNode* re = mySolution.removeElements(myTest.GetTestData2(),1);
+	ListNode* re = mySolution.removeNthFromEnd(myTest.GetTestData(),1);
 
 
 	clock_t endTime = clock();

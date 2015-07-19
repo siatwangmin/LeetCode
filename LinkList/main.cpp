@@ -3,7 +3,7 @@
 #include "linklist.h"
 
 
-#include "24SwapNodesinPairs.cpp"
+#include "142LinkedListCycleII.cpp"
 
 using namespace std;
 
@@ -16,10 +16,10 @@ int main()
 	TestClass myTest = TestClass();
 	
 	
-	ListNode* re0 = mySolution.swapPairs(NULL);
-	ListNode* re1 = mySolution.swapPairs(myTest.GetTestData1());
-	ListNode* re2 = mySolution.swapPairs(myTest.GetTestData2());
-	ListNode* re3 = mySolution.swapPairs(myTest.GetTestData3());
+	ListNode* re0 = mySolution.detectCycle(NULL);
+	ListNode* re1 = mySolution.detectCycle(myTest.GetTestData1());
+	ListNode* re2 = mySolution.detectCycle(myTest.GetTestData2());
+	ListNode* re3 = mySolution.detectCycle(myTest.GetTestData3());
 
 	clock_t endTime = clock();
 

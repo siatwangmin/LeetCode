@@ -59,5 +59,8 @@
     <ClCompile Include="109ConvertSortedListtoBinarySearchTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="86PartitionList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

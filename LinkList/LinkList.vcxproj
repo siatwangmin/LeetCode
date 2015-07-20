@@ -93,6 +93,7 @@
     <ClCompile Include="234PalindromeLinkedList.cpp" />
     <ClCompile Include="24SwapNodesinPairs.cpp" />
     <ClCompile Include="83RemoveDuplicatesfromSortedList.cpp" />
+    <ClCompile Include="86PartitionList.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

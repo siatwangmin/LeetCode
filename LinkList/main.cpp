@@ -4,7 +4,7 @@
 #include "linklist.h"
 
 
-#include "109ConvertSortedListtoBinarySearchTree.cpp"
+#include "86PartitionList.cpp"
 
 using namespace std;
 
@@ -19,10 +19,10 @@ int main()
 	TestClass myTest = TestClass();
 	
 	
-	TreeNode* re0 = mySolution.sortedListToBST(NULL);
-	TreeNode* re1 = mySolution1.sortedListToBST(myTest.GetTestData1());
-	TreeNode* re2 = mySolution2.sortedListToBST(myTest.GetTestData2());
-	TreeNode* re3 = mySolution3.sortedListToBST(myTest.GetTestData3());
+	ListNode* re0 = mySolution.partition(NULL,0);
+	ListNode* re1 = mySolution1.partition(myTest.GetTestData1(),1);
+	ListNode* re2 = mySolution2.partition(myTest.GetTestData1(),3);
+	ListNode* re3 = mySolution3.partition(myTest.GetTestData1(),5);
 
 	clock_t endTime = clock();
 

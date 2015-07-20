@@ -31,11 +31,39 @@ using namespace std;
 //	}
 //};
 
+//一个很有意思的解法
+//http://fisherlei.blogspot.com/2013/11/leetcode-linked-list-cycle-ii-solution.html
+//http://blog.csdn.net/cs_guoxiaozhu/article/details/14209743
 
 class Solution {
 public:
 	ListNode *detectCycle(ListNode *head) {
+		ListNode* S = head;
+		ListNode* F = head;
+		
+		while (S != NULL && F != NULL)
+		{
+			S = S->next;
+			F = F->next;
+			if (F != NULL)
+				F = F->next;
+			if (S == F)
+			{
+				break;
+			}
+		}
 
+		if (F == NULL)
+			return F;
+
+		S = head;
+
+		while (F != S)
+		{
+			F = F->next;
+			S = S->next;
+		}
+		return F;
 	}
 };
 

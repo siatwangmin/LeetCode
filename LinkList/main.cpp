@@ -10,7 +10,6 @@ using namespace std;
 int main()
 {
 	clock_t startTime = clock();
-	int i = 500;
 
 	Solution mySolution = Solution();
 	TestClass myTest = TestClass();

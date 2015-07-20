@@ -79,8 +79,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="linklist.h" />
+    <ClInclude Include="tree.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="109ConvertSortedListtoBinarySearchTree.cpp" />
     <ClCompile Include="141LinkedListCycle.cpp" />
     <ClCompile Include="142LinkedListCycleII.cpp" />
     <ClCompile Include="160IntersectionofTwoLinkedLists.cpp" />

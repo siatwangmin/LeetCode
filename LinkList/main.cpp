@@ -1,9 +1,10 @@
 #include <iostream>
 #include <time.h>
+#include "tree.h"
 #include "linklist.h"
 
 
-#include "142LinkedListCycleII.cpp"
+#include "109ConvertSortedListtoBinarySearchTree.cpp"
 
 using namespace std;
 
@@ -12,13 +13,16 @@ int main()
 	clock_t startTime = clock();
 
 	Solution mySolution = Solution();
+	Solution mySolution1 = Solution();
+	Solution mySolution2 = Solution();
+	Solution mySolution3 = Solution();
 	TestClass myTest = TestClass();
 	
 	
-	ListNode* re0 = mySolution.detectCycle(NULL);
-	ListNode* re1 = mySolution.detectCycle(myTest.GetTestData1());
-	ListNode* re2 = mySolution.detectCycle(myTest.GetTestData2());
-	ListNode* re3 = mySolution.detectCycle(myTest.GetTestData3());
+	TreeNode* re0 = mySolution.sortedListToBST(NULL);
+	TreeNode* re1 = mySolution1.sortedListToBST(myTest.GetTestData1());
+	TreeNode* re2 = mySolution2.sortedListToBST(myTest.GetTestData2());
+	TreeNode* re3 = mySolution3.sortedListToBST(myTest.GetTestData3());
 
 	clock_t endTime = clock();
 

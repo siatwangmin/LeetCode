@@ -14,49 +14,78 @@ using namespace std;
 //return 1->2->2->4->3->5.
 //-------------------------------------------------------------------------------------------
 
+//±©Á¦½â·¨£¬Time Out
+//class Solution {
+//public:
+//	ListNode* partition(ListNode* head, int x) {
+//		ListNode* cur = head;
+//		ListNode* start = NULL;
+//		ListNode* pre = NULL;
+//		ListNode* lPre = NULL;
+//		ListNode* myNode = NULL;
+//		while (cur != NULL)
+//		{
+//			if (cur->val == x)
+//			{
+//				myNode = cur;
+//				break;
+//			}
+//			cur = cur->next;
+//		}
+//
+//		while (cur != NULL)
+//		{
+//			if (cur->val < x)
+//			{
+//				pre->next = cur->next;
+//				start = head;
+//				while (start!=myNode->next)
+//				{
+//					if (start->val > cur->val)
+//					{
+//						if (lPre != NULL)
+//							lPre->next = cur;
+//						cur->next = start;
+//						break;
+//					}
+//					lPre = start;
+//					start = start->next;
+//				}
+//			}
+//			pre = cur;
+//			cur = cur->next;
+//		}
+//
+//		return head;
+//	}
+//};
 
 class Solution {
 public:
-	ListNode* partition(ListNode* head, int x) {
-		ListNode* cur = head;
-		ListNode* start = NULL;
-		ListNode* pre = NULL;
-		ListNode* lPre = NULL;
-		ListNode* myNode = NULL;
-		while (cur != NULL)
-		{
-			if (cur->val == x)
-			{
-				myNode = cur;
-				break;
-			}
-			cur = cur->next;
-		}
+	ListNode *partition(ListNode *head, int x) {
+		if (head == NULL)
+			return head;
 
-		while (cur != NULL)
-		{
-			if (cur->val < x)
-			{
-				pre->next = cur->next;
-				start = head;
-				while (start!=myNode->next)
-				{
-					if (start->val > cur->val)
-					{
-						if (lPre != NULL)
-							lPre->next = cur;
-						cur->next = start;
-						break;
-					}
-					lPre = start;
-					start = start->next;
-				}
-			}
-			pre = cur;
-			cur = cur->next;
-		}
+		ListNode *sm = new ListNode(0), *sm_tail = sm;
+		ListNode *bg = new ListNode(0), *bg_tail = bg;
+		ListNode *cur = head;
 
-		return head;
+		while (cur) {
+			if (cur->val < x) {
+				sm_tail->next = cur;
+				cur = cur->next;
+				sm_tail = sm_tail->next;
+				sm_tail->next = NULL;
+			}
+			else{
+				bg_tail->next = cur;
+				bg_tail = bg_tail->next;
+				cur = cur->next;
+				bg_tail->next = NULL;
+			}
+		}
+		sm_tail->next = bg->next;
+		return sm->next;
 	}
 };
 

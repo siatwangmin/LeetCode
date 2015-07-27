@@ -4,7 +4,7 @@
 #include "linklist.h"
 
 
-#include "86PartitionList.cpp"
+#include "147InsertionSortList.cpp"
 
 using namespace std;
 
@@ -19,10 +19,10 @@ int main()
 	TestClass myTest = TestClass();
 	
 	
-	ListNode* re0 = mySolution.partition(NULL,0);
-	ListNode* re1 = mySolution1.partition(myTest.GetTestData1(),1);
-	ListNode* re2 = mySolution2.partition(myTest.GetTestData1(),3);
-	ListNode* re3 = mySolution3.partition(myTest.GetTestData1(),5);
+	ListNode* re0 = mySolution.insertionSortList(NULL);
+	ListNode* re1 = mySolution1.insertionSortList(myTest.GetTestData1());
+	ListNode* re2 = mySolution2.insertionSortList(myTest.GetTestData2());
+	ListNode* re3 = mySolution3.insertionSortList(myTest.GetTestData3());
 
 	clock_t endTime = clock();
 

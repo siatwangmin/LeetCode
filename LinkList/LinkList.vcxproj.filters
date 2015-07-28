@@ -65,5 +65,8 @@
     <ClCompile Include="147InsertionSortList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="92ReverseLinkedListII.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -7,7 +7,7 @@ using namespace std;
 //Sort a linked list using insertion sort.
 //----------------------------------------
 
-
+//方法一：迭代
 class Solution {
 public:
 	ListNode* insertionSortList(ListNode* head) {
@@ -49,6 +49,8 @@ public:
 		return res->next;
 	}
 };
+
+//方法二：用递归
 
 
 class TestClass{

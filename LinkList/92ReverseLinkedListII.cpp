@@ -41,8 +41,16 @@ public:
 			}
 			else if (m <= count && count <= n)
 			{
-				cur->next = l2start->next;
-				l2start->next = cur;
+				if (count == m)
+				{
+					l2end->val = cur->val;
+					l2end->next = cur->next;
+				}
+				else
+				{
+					cur->next = l2start->next;
+					l2start->next = cur;
+				}
 			}
 			else if (count > n)
 			{
@@ -54,12 +62,7 @@ public:
 		}
 		if (l3start->next != NULL)
 		{
-			l2end->val = l3start->next->val;
-			l2end->next = l3start->next->next;
-		}
-		else
-		{
-			l2end = NULL;
+			l2end->next = l3start->next;
 		}
 		
 		if (l1start != l1end)

@@ -93,6 +93,8 @@
     <ClCompile Include="21MergeTwoSortedLists.cpp" />
     <ClCompile Include="234PalindromeLinkedList.cpp" />
     <ClCompile Include="24SwapNodesinPairs.cpp" />
+    <ClCompile Include="25ReverseNodesInKGroup.cpp" />
+    <ClCompile Include="2AddTwoNumbers.cpp" />
     <ClCompile Include="83RemoveDuplicatesfromSortedList.cpp" />
     <ClCompile Include="86PartitionList.cpp" />
     <ClCompile Include="92ReverseLinkedListII.cpp" />

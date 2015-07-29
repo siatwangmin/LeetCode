@@ -4,7 +4,7 @@
 #include "linklist.h"
 
 
-#include "92ReverseLinkedListII.cpp"
+#include "2AddTwoNumbers.cpp"
 
 using namespace std;
 
@@ -19,10 +19,8 @@ int main()
 	TestClass myTest = TestClass();
 	
 	
-	ListNode* re0 = mySolution.reverseBetween(NULL,2,4);
-	ListNode* re1 = mySolution1.reverseBetween(myTest.GetTestData1(), 2, 4);
-	ListNode* re2 = mySolution1.reverseBetween(myTest.GetTestData1(), 1, 5);
-	ListNode* re3 = mySolution1.reverseBetween(myTest.GetTestData2(), 1, 1);
+	ListNode* re0 = mySolution.addTwoNumbers(myTest.GetTestData1(),myTest.GetTestData2());
+	ListNode* re1 = mySolution1.addTwoNumbers(myTest.GetTestData3(), myTest.GetTestData4());
 	
 	//*ListNode* re2 = mySolution2.insertionSortList(myTest.GetTestData2());
 	//ListNode* re3 = mySolution3.insertionSortList(myTest.GetTestData3());* /

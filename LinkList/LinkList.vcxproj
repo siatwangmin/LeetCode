@@ -96,6 +96,7 @@
     <ClCompile Include="25RerverseNodeinkGroup.cpp" />
     <ClCompile Include="25ReverseNodesInKGroup.cpp" />
     <ClCompile Include="2AddTwoNumbers.cpp" />
+    <ClCompile Include="61RotateList.cpp" />
     <ClCompile Include="82RemoveDuplicatesfromSortedListII.cpp" />
     <ClCompile Include="83RemoveDuplicatesfromSortedList.cpp" />
     <ClCompile Include="86PartitionList.cpp" />

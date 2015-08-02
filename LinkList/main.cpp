@@ -4,7 +4,7 @@
 #include "linklist.h"
 
 
-#include "82RemoveDuplicatesfromSortedListII.cpp"
+#include "61RotateList.cpp"
 
 using namespace std;
 
@@ -18,9 +18,12 @@ int main()
 	Solution mySolution3 = Solution();
 	TestClass myTest = TestClass();
 	
+	ListNode* re2 = mySolution.rotateRight(NULL, 1);
 
-	ListNode* re3 = mySolution.deleteDuplicates(myTest.GetTestData1());
-	ListNode* re4 = mySolution.deleteDuplicates(myTest.GetTestData2());
+	ListNode* re3 = mySolution.rotateRight(myTest.GetTestData1(),2);
+	ListNode* re4 = mySolution.rotateRight(myTest.GetTestData1(), 1);
+	ListNode* re5 = mySolution.rotateRight(myTest.GetTestData1(), 10);
+
 	
 	//*ListNode* re2 = mySolution2.insertionSortList(myTest.GetTestData2());
 	//ListNode* re3 = mySolution3.insertionSortList(myTest.GetTestData3());* /

@@ -4,7 +4,7 @@
 #include "linklist.h"
 
 
-#include "2AddTwoNumbers.cpp"
+#include "25RerverseNodeinkGroup.cpp"
 
 using namespace std;
 
@@ -18,9 +18,11 @@ int main()
 	Solution mySolution3 = Solution();
 	TestClass myTest = TestClass();
 	
-	
-	ListNode* re0 = mySolution.addTwoNumbers(myTest.GetTestData1(),myTest.GetTestData2());
-	ListNode* re1 = mySolution1.addTwoNumbers(myTest.GetTestData3(), myTest.GetTestData4());
+
+	ListNode* re3 = mySolution.reverseKGroup(NULL, 2);
+	ListNode* re2 = mySolution.reverseKGroup(myTest.GetTestData1(), 1);
+	ListNode* re0 = mySolution.reverseKGroup(myTest.GetTestData1(), 2);
+	ListNode* re1 = mySolution.reverseKGroup(myTest.GetTestData1(), 3);
 	
 	//*ListNode* re2 = mySolution2.insertionSortList(myTest.GetTestData2());
 	//ListNode* re3 = mySolution3.insertionSortList(myTest.GetTestData3());* /

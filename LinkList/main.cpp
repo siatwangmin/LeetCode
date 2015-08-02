@@ -4,7 +4,7 @@
 #include "linklist.h"
 
 
-#include "25RerverseNodeinkGroup.cpp"
+#include "82RemoveDuplicatesfromSortedListII.cpp"
 
 using namespace std;
 
@@ -19,10 +19,8 @@ int main()
 	TestClass myTest = TestClass();
 	
 
-	ListNode* re3 = mySolution.reverseKGroup(NULL, 2);
-	ListNode* re2 = mySolution.reverseKGroup(myTest.GetTestData1(), 1);
-	ListNode* re0 = mySolution.reverseKGroup(myTest.GetTestData1(), 2);
-	ListNode* re1 = mySolution.reverseKGroup(myTest.GetTestData1(), 3);
+	ListNode* re3 = mySolution.deleteDuplicates(myTest.GetTestData1());
+	ListNode* re4 = mySolution.deleteDuplicates(myTest.GetTestData2());
 	
 	//*ListNode* re2 = mySolution2.insertionSortList(myTest.GetTestData2());
 	//ListNode* re3 = mySolution3.insertionSortList(myTest.GetTestData3());* /

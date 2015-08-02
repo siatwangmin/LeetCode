@@ -4,7 +4,7 @@
 #include "linklist.h"
 
 
-#include "23MergekSortedLists.cpp"
+#include "143ReorderList.cpp"
 
 using namespace std;
 
@@ -21,10 +21,11 @@ int main()
 	vec.push_back(NULL);
 	vec.push_back(NULL);
 
-	ListNode* re2 = mySolution.mergeKLists(vec);
-
-	ListNode* re3 = mySolution.mergeKLists(myTest.GetTestData1());
-
+	
+	ListNode* re3 = myTest.GetTestData1();
+	ListNode* re4 = myTest.GetTestData2();
+	mySolution.reorderList(re3);
+	mySolution.reorderList(re4);
 	
 	//*ListNode* re2 = mySolution2.insertionSortList(myTest.GetTestData2());
 	//ListNode* re3 = mySolution3.insertionSortList(myTest.GetTestData3());* /

@@ -79,6 +79,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="153FindMinimumInRotatedSortedArray.cpp" />
+    <ClCompile Include="154FindMinimuminRotatedSortedArray2.cpp" />
     <ClCompile Include="35SearchInsertPosition.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

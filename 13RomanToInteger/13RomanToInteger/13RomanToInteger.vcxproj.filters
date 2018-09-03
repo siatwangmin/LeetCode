@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="13RomanToInteger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="217ContainDuplicate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="191NumberOf1Bit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="104MaximumDepthofBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="111MinimumDepthOfBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="110BalancedBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="145BinaryTreePostorderTraversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="226InvertBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="144BinaryTreePreoderTraveral.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="104BinaryTreeLevelOrderTraversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="103BinaryTreeZigzagLevelOrderTraversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="94BinaryTreeInorderTraversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="107BinaryTreeLevelOrderTraversal2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="105ConstructBinaryTreefromPreorderandInorderTraversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="101SymmetricTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="100SameTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="106ConstructBinaryTreefromInorderandPostorderTraversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="112PathSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="114PathSum2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="199BinaryTreeRightSideView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="116PopulatingNextRightPointersinEachNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="117PopulatingNextRightPointersInEachNode2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="70ClimbingStairs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="198HouseRobber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="213HouseRob2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="96UniqueBinarySearchTrees.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="108ConvertSortedArraytoBinarySearchTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="129SumRoottoLeafNumbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="235LowestCommonAncestorofaBinarySearchTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="236LowestCommonAncestorofaBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="230KthSmallestElementinaBST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="173BinarySearchTreeIterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="114FlattenBinaryTreetoLinkedList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="99RecoverBinarySearchTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="98ValidateBinarySearchTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="222CountCompleteTreeNodes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

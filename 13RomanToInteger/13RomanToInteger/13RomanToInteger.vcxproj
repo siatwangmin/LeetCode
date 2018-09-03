@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACB80E83-0B36-4C0E-99D3-C4BA203A1610}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>My13RomanToInteger</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="100SameTree.cpp" />
+    <ClCompile Include="101SymmetricTree.cpp" />
+    <ClCompile Include="103BinaryTreeZigzagLevelOrderTraversal.cpp" />
+    <ClCompile Include="104BinaryTreeLevelOrderTraversal.cpp" />
+    <ClCompile Include="104MaximumDepthofBinaryTree.cpp" />
+    <ClCompile Include="105ConstructBinaryTreefromPreorderandInorderTraversal.cpp" />
+    <ClCompile Include="106ConstructBinaryTreefromInorderandPostorderTraversal.cpp" />
+    <ClCompile Include="107BinaryTreeLevelOrderTraversal2.cpp" />
+    <ClCompile Include="108ConvertSortedArraytoBinarySearchTree.cpp" />
+    <ClCompile Include="110BalancedBinaryTree.cpp" />
+    <ClCompile Include="111MinimumDepthOfBinaryTree.cpp" />
+    <ClCompile Include="112PathSum.cpp" />
+    <ClCompile Include="114FlattenBinaryTreetoLinkedList.cpp" />
+    <ClCompile Include="114PathSum2.cpp" />
+    <ClCompile Include="116PopulatingNextRightPointersinEachNode.cpp" />
+    <ClCompile Include="117PopulatingNextRightPointersInEachNode2.cpp" />
+    <ClCompile Include="129SumRoottoLeafNumbers.cpp" />
+    <ClCompile Include="13RomanToInteger.cpp" />
+    <ClCompile Include="144BinaryTreePreoderTraveral.cpp" />
+    <ClCompile Include="145BinaryTreePostorderTraversal.cpp" />
+    <ClCompile Include="173BinarySearchTreeIterator.cpp" />
+    <ClCompile Include="191NumberOf1Bit.cpp" />
+    <ClCompile Include="198HouseRobber.cpp" />
+    <ClCompile Include="199BinaryTreeRightSideView.cpp" />
+    <ClCompile Include="213HouseRob2.cpp" />
+    <ClCompile Include="217ContainDuplicate.cpp" />
+    <ClCompile Include="222CountCompleteTreeNodes.cpp" />
+    <ClCompile Include="226InvertBinaryTree.cpp" />
+    <ClCompile Include="230KthSmallestElementinaBST.cpp" />
+    <ClCompile Include="235LowestCommonAncestorofaBinarySearchTree.cpp" />
+    <ClCompile Include="236LowestCommonAncestorofaBinaryTree.cpp" />
+    <ClCompile Include="70ClimbingStairs.cpp" />
+    <ClCompile Include="94BinaryTreeInorderTraversal.cpp" />
+    <ClCompile Include="96UniqueBinarySearchTrees.cpp" />
+    <ClCompile Include="98ValidateBinarySearchTree.cpp" />
+    <ClCompile Include="99RecoverBinarySearchTree.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tree.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

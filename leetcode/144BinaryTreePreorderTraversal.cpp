@@ -44,6 +44,25 @@ public:
         return res;
     }
 
+    vector<int> iterPreorderTraversal2(TreeNode* root){
+        std::stack<TreeNode*> sta;
+        TreeNode* tmp;
+        if(!root){
+            return res;
+        }
+        sta.push(root);
+        while(!sta.empty()){
+            tmp = sta.top();
+            sta.pop();
+            while(tmp){
+                res.push_back(tmp->val);
+                sta.push(tmp->right);
+                tmp = tmp->left;
+            }
+        }
+        return res;
+    }
+
 };
 
 
@@ -86,4 +105,18 @@ TEST(IterativeBinaryTreePreorderTest, NULLTest) {
     Solution s;
     vector<int> re = s.iter_preorderTraversal(NULL);
     EXPECT_EQ(re.size(), 0);
+}
+
+TEST(IterativeBinaryTreePreorderTest2, NoneZero) {
+    TreeNode* root1 = new TreeNode(1);
+    TreeNode* root2 = new TreeNode(2);
+    TreeNode* root3 = new TreeNode(3);
+    root1->left = root2;
+    root1->right = root3;
+    Solution s;
+    vector<int> re = s.iterPreorderTraversal2(root1);
+    vector<int> er = {1, 2 ,3};
+    for (int i = 0; i < re.size(); ++i) {
+        EXPECT_EQ(re[i], er[i]) <<  "Vectors differ at " << i;
+    }
 }

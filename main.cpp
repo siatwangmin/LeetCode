@@ -3,17 +3,14 @@
 #include <stack>
 #include <algorithm>
 #include <gtest/gtest.h>
-//#include "leetcode/145BinaryTreePostorderTraversal.cpp"
-//#include "leetcode/53MaximumSubarray.cpp"
-
-//#include "leetcode/121BestTimetoBuyandSellStock.cpp"
-//#include "leetcode/102BinaryTreeLevelOrderTraversal.cpp"
-#include "leetcode/103BinaryTreeZigzagLevelOrderTraversal.cpp"
-
+//#include "leetcode/98ValidateBinarySearchTree.cpp"
+//#include "leetcode/BubbleSort.cpp"
+#include "leetcode/746MinCostClimbingStairs.cpp"
 using namespace std;
-using namespace std;
+
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
+
